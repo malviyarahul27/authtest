@@ -1,0 +1,14 @@
+<nav class="bg-black/20 text-gray-200 backdrop-blur-lg h-16 flex justify-between items-center px-20 ">
+    <h1 class="logo w-fit text-3xl font-bold "><a href="/">ĄUTH</a></h1>
+    <div class="links font-medium flex justify-between gap-10">
+
+        <% if(user){%>
+            <a class="hover:text-white" href="/profile">PROFILE</a>
+            <a class="hover:text-white text-red-700" href="/users/signout">LOGOUT</a>
+
+            <% }else{ %>
+                <a class="hover:text-white" href="/users/signup">REGISTER</a>
+                <a class="hover:text-white " href="/users/signin">LOGIN</a>
+                <% } %>
+    </div>
+</nav>
